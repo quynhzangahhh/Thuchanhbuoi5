@@ -1,0 +1,14 @@
+CREATE TABLE MATHANG (
+  mahang INT PRIMARY KEY,
+  tenhang VARCHAR(50) NOT NULL,
+  soluong INT NOT NULL
+);
+
+CREATE TABLE NHATKYBANHANG (
+  stt INT PRIMARY KEY,
+  ngay DATE NOT NULL,
+  nguoimua VARCHAR(50) NOT NULL,
+  mahang INT NOT NULL,
+  soluong INT NOT NULL,
+  giaban FLOAT NOT NULL,
+);
