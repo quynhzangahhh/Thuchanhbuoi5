@@ -1,0 +1,8 @@
+CREATE PROCEDURE SP_TongSoNhanVienTheoChucVu
+  @TenCV NVARCHAR(50)
+AS
+BEGIN
+  SELECT COUNT(*) AS TongSoNhanVien
+  FROM NhanVien
+  WHERE MaCV IN (SELECT MaCV FROM ChucVu WHERE TenCV = @TenCV);
+END
